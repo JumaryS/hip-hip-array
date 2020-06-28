@@ -12,7 +12,7 @@ function callChallengeBanner(num){
   hashTag= hashTag +'#########'
   console.log(hashTag + " " + "challenge" + num + " " + hashTag)
 }
-callChallengeBanner(0)
+callChallengeBanner()
 
 //
 // Challenge banner time! Write a function that console.logs "####### Challenge n #######", where n is the number passed into the function.
@@ -21,7 +21,7 @@ callChallengeBanner(0)
 // 
 //
 
-callChallengeBanner(1)
+callChallengeBanner(0)
 // Loop through the following array, console.logging out each value.
 const students = [
   'Crystal',
@@ -44,27 +44,44 @@ const students = [
    }
 //  }
 
-callChallengeBanner(2)
+callChallengeBanner(1)
 // Loop through the following array BACKWARDS, console.logging out each value. 64 should be first and 100 last.
 const grades = [100, 80, 110, 75, 83, 64];
 for(let i=grades.length-1; i>=0; i--){
   console.log(grades[i])
 }
 // OR console.log(grades.reverse()) works
-callChallengeBanner(3)
+callChallengeBanner(2)
 // Challenge 3
 // Console.log out only the even numbers in the following array.
 const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
 
-
-// Challenge 4
+for(let i=0; i< positiveNumbers.length; i++){
+  if (positiveNumbers[i] % 2 === 0){
+    console.log(positiveNumbers[i])
+  }
+}
+callChallengeBanner(3)
 // Console.log out the even numbers in the following array, INCLUDING the negative ones. There should be four of them!
 const mixedSignNumbers = [3, 15, 14, -2, -3, -8, -103, 4];
+for(let i=0; i< mixedSignNumbers.length; i++){
+  if (mixedSignNumbers[i] % 2 === 0){
+    console.log(mixedSignNumbers[i])
+  }
+}
 
-
-// Challenge 5
+callChallengeBanner(4)
 // Remove two values from the beginning and one value from the end of the following array, simply by deleting them in the following line. Then console.log out each value individually.
 const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y'];
+console.log(symmetricalCapitals.shift())
+console.log(symmetricalCapitals.shift())
+console.log(symmetricalCapitals.pop())
+
+console.log(symmetricalCapitals)
+// for(let i =0; i < symmetricalCapitals.length; i++){
+//   console.log(symmetricalCapitals.pop())
+// } why doesnt my forloop work
+
 
 
 // Challenge 6
