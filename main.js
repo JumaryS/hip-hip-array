@@ -4,6 +4,19 @@
 
 
 // Challenge 0
+
+
+function callChallengeBanner(num){
+  let hashTag= ""
+
+  for(let i=0;i<= num;i++){
+
+    console.log(hashTag+ " " + "ChallengeBanner"+ " "+ num+ " "+ hashTag)
+    hashTag= hashTag + "#########"
+  }
+}
+console.log(callChallengeBanner(0))
+
 //
 // Challenge banner time! Write a function that console.logs "####### Challenge n #######", where n is the number passed into the function.
 //
@@ -14,23 +27,27 @@
 //
 // Loop through the following array, console.logging out each value.
 const students = [
-  'Bogdan',
+  'Crystal',
   'Carlos',
-  'David',
-  'Denis',
+  'Daniel',
+  'Chase',
   'Jumary',
   'Marc',
   'Deaundre',
   'LaToddra',
-  'Michael',
-  'Patrick',
+  'Ruben',
+  'Prim',
   'Sharod',
-  'Tyrell',
-  'Wilson',
+  'Dallas',
+  'Miley',
 ];
+//  function loop(){
+   for(let i=0; i<=students.length; i++){
+     console.log(students[i])
+   }
+//  }
 
-
-// Challenge 2
+console.log(callChallengeBanner(1))
 // Loop through the following array BACKWARDS, console.logging out each value. 64 should be first and 100 last.
 const grades = [100, 80, 110, 75, 83, 64];
 
