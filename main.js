@@ -113,16 +113,20 @@ newArray.unshift("item3")
 newArray.unshift("item4")
 console.log(newArray)
 // }
-// Challenge 9
+callChallengeBanner(8)
 // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
 for(let i=3;i<=10;i++){
   console.log(students[i])
 }
 
-// Challenge 10
+callChallengeBanner(9)
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy indivudally.
 
-
+for(let i=0;i< students.length;i++){
+  const studentsCopy= [...students]
+  console.log(studentsCopy[i])
+  console.log(students[i])
+}
 // Challenge 11
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the two arrays are the same, because `slice` does NOT modify the original array.
 
