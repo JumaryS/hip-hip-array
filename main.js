@@ -122,29 +122,38 @@ for(let i=3;i<=10;i++){
 callChallengeBanner(9)
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy indivudally.
 
-for(let i=0;i< students.length;i++){
+for(let i=3;i<=10;i++){
   const studentsCopy= [...students]
   console.log(studentsCopy[i])
-  console.log(students[i])
+  
 }
-// Challenge 11
+callChallengeBanner(10)
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the two arrays are the same, because `slice` does NOT modify the original array.
+for(let i=3;i<=10;i++){
+  const copy= students.slice()
+  console.log(copy[i])
+
+}
 
 
-// Challenge 12
+callChallengeBanner(11)
 // Pull the items at the 4th-6th indices (inclusive) from the following array using .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. Note that .splice DOES change the original array.
 const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
+for(let i=4;i<=6;i++){
+  const copy= dinosaurs.slice()
+  console.log(copy[i])
 
+}
 
-// Challenge 13
+callChallengeBanner(12)
 // Use .join to change the dinosaur strings from the above array into one string with a '*' string as the "separator". Then console.log out that string.
 
 
-// Challenge 14
+callChallengeBanner(13)
 // Use .reverse to reverse the dinosaur array and then log out the original array. .reverse DOES change the original array.
 
 
-// Challenge 15
+callChallengeBanner(14)
 // Use .concat to combine the following two arrays into a NEW array you make. Then console.log out each value of that new array individually. Now console.log both the primaries and secondaries arrays, noting that .concat does NOT mutate the original arrays.
 const primaries = ['red', 'yellow', 'blue'];
 const secondaries = ['orange', 'green', 'purple'];
