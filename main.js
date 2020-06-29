@@ -84,19 +84,35 @@ console.log(symmetricalCapitals)
 
 
 
-// Challenge 6
+callChallengeBanner(5)
 // Add a value (your choice!) to the start of the following array and two values (of your choice) to the end simply by adding them in the following line, and then console.log out each value individually.
 const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
+console.log(fibonacciNumbers.push(9010))
+console.log(fibonacciNumbers.push(1020))
+console.log(fibonacciNumbers.unshift(9010))
+console.log(fibonacciNumbers.unshift(1020))
+console.log(fibonacciNumbers)
 
 
-// Challenge 7
+callChallengeBanner(6)
 // Make a NEW array with 5 values of your choice, using the same syntax as the arrays from the previous 6 challenges, that is, every value should be placed within the square brackets.  Now console.log out each value individually.
 
+const newArray= ["Sir Charles", "Sunset", "Comet","Pluto","Nova"]
 
-// Challenge 8
+for(let i=0; i<=newArray.length -1; i++){
+  console.log(newArray[i])
+}
+
+callChallengeBanner(7)
 // Make a new EMPTY array and fill it with five values of your choice using BOTH .push AND .unshift, and then console.log out each value individually.
-
-
+const newEmptyArray= []
+// for(let i=0; i< newEmptyArray.length; i++){
+newArray.push("item1")
+newArray.push("item2")
+newArray.unshift("item3")
+newArray.unshift("item4")
+console.log(newArray)
+// }
 // Challenge 9
 // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
 
